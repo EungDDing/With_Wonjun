@@ -3,79 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WithBook</title>
-    <style>
-        header {
-            margin-top: 30px;
-        }
-        #sitename {
-            padding: 30px 50px;
-            margin: 30px;
-            font-weight: bold;
-            font-size:40px;
-            color: midnightblue;
-        }
-        #searchbar {
-            color: midnightblue;
-            height: 30px;
-            width: 700px;
-            border: solid 6px;
-        }
-        #searchbutton {
-            background-color: midnightblue;
-            color: white;
-            width: 50px;
-            height: 30px;
-        }
-        .Book {
-            box-sizing: border-box;
-            height: 400px;
-            width: 280px;
-            margin-left: 100px;
-            padding: 10px;
-            border: 1px;
-        }
-        .title {
-            margin: 10px;
-            margin-bottom: 15px;
-            margin-top: 20px;
-            font-size: 30px;
-        }
-        .Shelf {
-            column-count: 3;
-            column-rule-color: gray;
-            column-rule-style: solid;
-            margin-bottom: 30px;
-        }
-        .Site {
-            font-size: 20px;
-            font-weight: bold;
-            color: black;
-            margin: 20px;
-        }
-        .Image {
-            display: block;
-            margin: 0 auto;
-            width: 250px;
-        }
-        figcaption {
-          color: #fff;
-          background: rgba(55, 55, 55, 0.5);
-          padding: 1em;
-          line-height: 1;
-  
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: 0;
-        }
-
-        figure {
-          margin: 0;
-          line-height: 0;
-  
-          position: relative;
-        }
-    </style>
+    <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -91,8 +19,14 @@
             <p class="Site">교보문고</p> <br />
             <div class="Book">
             <figure>
-                <img class="Image" src="./images/Best1.jpg" />
-                <figcaption>1. 그 해 우리는</figcaption>
+                <div class="kyobo_slides">
+                    <img id="ky" src="" />
+                    <figcaption>1. 그 해 우리는</figcaption>
+                </div>
+                <div class="btn">
+                    <a class="prev" style="text-decoration: none;">&#10094;</a>
+                    <a class="next" style="text-decoration: none;">&#10095;</a>
+                </div>
             </figure>
             </div>
             <p class="Site">알라딘</p> <br />
@@ -159,5 +93,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js" ></script>
 </body>
 </html>
