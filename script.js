@@ -4,12 +4,10 @@ var img_btn_next = document.querySelector(".next");
 var index = 1;
 
 img_btn_next.addEventListener('click', (e)=> {
-    console.log(index);
     imgnextClick();
 });
 
 img_btn_prev.addEventListener('click', (e)=>{
-    console.log(index);
     imgprevClick();
 })
 

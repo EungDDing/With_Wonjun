@@ -22,11 +22,9 @@ header {
 }
 .Book {
     box-sizing: border-box;
-    height: 400px;
-    width: 280px;
-    margin-left: 100px;
-    padding: 10px;
-    border: 1px;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
 }
 .title {
     margin: 10px;
@@ -49,7 +47,7 @@ header {
 .Image {
     display: block;
     margin: 0 auto;
-    width: 250px;
+    width:100%;
 }
 figcaption {
   color: #fff;
@@ -66,10 +64,22 @@ figcaption {
 figure {
   margin: 0;
   line-height: 0;
-
   position: relative;
+}
+
+.kyobo_slides, .ala_slides, .yes_slides{
+    display:inline-block;
+    width: 70%;
+}
+
+.book_info{
+    display:flex;
+    align-items:center;
 }
 
 .btn{
     font-size: 50px;
+    display: inline-block;
+    width: 10%;
+    cursor: pointer;
 }
