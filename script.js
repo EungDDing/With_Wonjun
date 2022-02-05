@@ -1,32 +1,35 @@
-var img_btn_prev = document.querySelector(".prev");
-var img_btn_next = document.querySelector(".next");
+var img_btn_prev = document.querySelectorAll(".prev");
+var img_btn_next = document.querySelectorAll(".next");
 
 var index = 1;
 
-img_btn_next.addEventListener('click', (e)=> {
-    imgnextClick();
-});
-
-img_btn_prev.addEventListener('click', (e)=>{
-    imgprevClick();
+img_btn_prev.forEach((e)=>{
+    e.addEventListener("click", imgprevClick);
 })
 
-function imgnextClick(){
-    var img_ky = document.getElementById("ky");
+img_btn_next.forEach((e)=>{
+    e.addEventListener("click", imgnextClick);
+})
+
+
+function imgnextClick(e){
+    var imgTag = e.path[2].children[1].children[0].children[0].id;
+    var imgObj = document.getElementById(imgTag);
     index++;
     if(index > 3){
         index = 1;
     }
-    img_ky.src = `./images/Best${index}.jpg` ;
-    img_ky.className = "Image";
+    imgObj.src = `./images/Best${index}.jpg` ;
+    imgObj.className = "Image";
 }
 
-function imgprevClick(){
-    var img_ky = document.getElementById("ky");
+function imgprevClick(e){
+    var imgTag = e.path[2].children[1].children[0].children[0].id;
+    var imgObj = document.getElementById(imgTag);
     index--;
     if(index == 0){
         index = 3;
     }
-    img_ky.src = `./images/Best${index}.jpg` ;
-    img_ky.className = "Image";
+    imgObj.src = `./images/Best${index}.jpg` ;
+    imgObj.className = "Image";
 }
