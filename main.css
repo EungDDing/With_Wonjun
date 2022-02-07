@@ -37,6 +37,7 @@ header {
     column-rule-color: gray;
     column-rule-style: solid;
     margin-bottom: 30px;
+    display: flex;
 }
 .Site {
     font-size: 20px;
