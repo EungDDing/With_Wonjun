@@ -1,110 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>WithBook</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <header>
-        <span id="sitename" href="#">WithBook</span>
+    <div class="header">
+        <a id="sitename" href="#">WithBook</a>
         <input id="searchbar" type="text" name="search" />
         <input id="searchbutton" type="button" value="검색" />
-    </header>
-    <section>
-        <div>
+    </div>
+    <div>
         <h1 class="title">베스트셀러</h1> <br />
-        </div>
-        <div class="Shelf">
-            <div class="Book">
-                <div class="book_name">
-                    <p class="Site">교보문고</p> <br />
-                </div>
-                <div class="book_info">
-                    <div class="btn">
-                        <a class="prev" style="text-decoration: none;">&#10094;</a>
-                    </div>
-                    <div class="kyobo_slides">
-                        <figure>
-                                <img id="ky" src="" />
-                                <figcaption>1. 그 해 우리는</figcaption>
-                        </figure>
-                    </div>
-                    <div class="btn">
-                        <a class="next" style="text-decoration: none;">&#10095;</a>
-                    </div>
-                </div>
+    </div>
+    <div class="Shelf">
+        <div class="Book">
+            <div class="book_name">
+                <p class="Site">교보문고</p> <br />
             </div>
-            <div class="Book">
-                <div class="book_name">
-                    <p class="Site">알라딘</p> <br />
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev" style="text-decoration: none;">&#10094;</a>
                 </div>
-                <div class="book_info">
-                    <div class="btn">
-                        <a class="prev" style="text-decoration: none;">&#10094;</a>
-                    </div>
-                    <div class="ala_slides">
-                        <figure>
-                                <img id="ala" src="" />
-                                <figcaption>1. 그 해 우리는</figcaption>
-                        </figure>
-                    </div>
-                    <div class="btn">
-                        <a class="next" style="text-decoration: none;">&#10095;</a>
-                    </div>
+                <div class="kyobo_slides">
+                    <figure>
+                        <img id="ky" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
                 </div>
-            </div>
-            <div class="Book">
-                <div class="book_name">
-                    <p class="Site">예스24</p> <br />
-                </div>
-                <div class="book_info">
-                    <div class="btn">
-                        <a class="prev" style="text-decoration: none;">&#10094;</a>
-                    </div>
-                    <div class="yes_slides">
-                        <figure>
-                                <img id="yes" src="" />
-                                <figcaption>1. 그 해 우리는</figcaption>
-                        </figure>
-                    </div>
-                    <div class="btn">
-                        <a class="next" style="text-decoration: none;">&#10095;</a>
-                    </div>
+                <div class="btn">
+                    <a class="next" style="text-decoration: none;">&#10095;</a>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="Book">
+            <div class="book_name">
+                <p class="Site">알라딘</p> <br />
+            </div>
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev" style="text-decoration: none;">&#10094;</a>
+                </div>
+                <div class="ala_slides">
+                    <figure>
+                        <img id="ala" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
+                </div>
+                <div class="btn">
+                    <a class="next" style="text-decoration: none;">&#10095;</a>
+                </div>
+            </div>
+        </div>
+        <div class="Book">
+            <div class="book_name">
+                <p class="Site">예스24</p> <br />
+            </div>
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev" style="text-decoration: none;">&#10094;</a>
+                </div>
+                <div class="yes_slides">
+                    <figure>
+                        <img id="yes" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
+                </div>
+                <div class="btn">
+                    <a class="next" style="text-decoration: none;">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
         <h1 class="title">신규 도서</h1> <br />
-        </div>
-        <div class="Shelf" >
-            <p class="Site">교보문고</p> <br />
-            <div class="Book">
+    </div>
+    <div class="Shelf">
+        <p class="Site">교보문고</p> <br />
+        <div class="Book">
             <figure>
                 <img class="Image" src="./images/New1.jpg" />
                 <figcaption>1. 윤석열 X파일</figcaption>
             </figure>
-            </div>
-            <p class="Site">알라딘</p> <br />
-            <div class="Book">
+        </div>
+        <p class="Site">알라딘</p> <br />
+        <div class="Book">
             <figure>
                 <img class="Image" src="./images/New2.jpg" />
                 <figcaption>1. 서울수도권 아파트, 지금 사야합니다</figcaption>
             </figure>
-            </div>
-            <p class="Site">예스24</p> <br />            
-            <div class="Book">
+        </div>
+        <p class="Site">예스24</p> <br />
+        <div class="Book">
             <figure>
                 <img class="Image" src="./images/Best3.jpg" />
                 <figcaption>1. 세븐 테크</figcaption>
             </figure>
-            </div> 
         </div>
+    </div>
+    <div>
+        <h1 class="title">이벤트</h1>
         <div>
-            <h1 class="title">이벤트</h1>
-            <div>
-                <p class="Site">교보문고</p>
-                <figure>
+            <p class="Site">교보문고</p>
+            <figure>
                 <img class="Image" src="./images/event1.jpg" />
                 <figcaption>이벤트 1</figcaption>
             </figure>
@@ -120,9 +121,9 @@
                 <img class="Image" src="./images/event4.jpg" />
                 <figcaption>이벤트 4</figcaption>
             </figure>
-            </div>
         </div>
-    </section>
-    <script src="script.js" ></script>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

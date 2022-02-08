@@ -1,5 +1,13 @@
-header {
+.header {
     margin-top: 30px;
+    overflow: hidden;
+    min-width: 1190px;
+}
+.header a:link, .navi a:visited {
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 1190px;
+    margin-bottom: 30px;
 }
 #sitename {
     padding: 30px 50px;

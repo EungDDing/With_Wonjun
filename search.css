@@ -1,0 +1,36 @@
+.header {
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 1190px;
+    margin-bottom: 30px;
+}
+.header a:link, .navi a:visited {
+    margin-top: 30px;
+    overflow: hidden;
+    min-width: 1190px;
+    margin-bottom: 30px;
+}
+#sitename {
+    padding: 30px 50px;
+    margin: 30px;
+    font-weight: bold;
+    font-size:40px;
+    color: midnightblue;
+}
+#searchbar {
+    color: midnightblue;
+    height: 30px;
+    width: 700px;
+    border: solid 6px;
+}
+#searchbutton {
+    background-color: midnightblue;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+.Besult {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;    
+}
