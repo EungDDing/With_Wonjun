@@ -37,6 +37,8 @@
 .Besult {
     margin-top: 10px;
     margin-left: 10px;
+    padding-left: 35px;
+    padding-top: 10px;
     font-weight: bold;    
 }
 
@@ -51,7 +53,7 @@ li{
 .bookList{
     height: 1000px;
     width: 1500px;
-    padding: 30px 15px 15px 30px;
+    padding: 30px 15px 15px 50px;
 }
 
 .thumbnail{
@@ -63,4 +65,14 @@ li{
 .book_info{
     float: left;
     height: 180px;
+    line-height: 25px;
+}
+
+.book_desc{
+    width:1000px;
+}
+
+.dis_price{
+    color:#ff3e00;
+    font-family: '굴림',gulim,Helvetica,sans-serif;
 }
