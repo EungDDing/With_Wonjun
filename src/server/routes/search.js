@@ -8,7 +8,7 @@ const client_sec = "dnp2wPibWQ";
 //검색
 router.get('/', (req, res) => {
 
-    var api_url = 'https://openapi.naver.com/v1/search/book.json?query=' + encodeURI(req.query.book); // json 결과
+    var api_url = 'https://openapi.naver.com/v1/search/book.json?query=' + encodeURI(req.query.search); // json 결과
     var request = require('request');
     var options = {
         url: api_url,
