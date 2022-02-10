@@ -5,15 +5,16 @@ head
   link(href='main.css' rel='stylesheet')
 .header
   a.sitename(href='#') WithBook
-  input#searchbar(type='text' name='search')
-  input#searchbutton(type='button' value='검색')
+  form(action='/search' method='get')
+    input#searchbar(type='text' name='search')
+    button(id="searchbutton" type="submit") 검색
 div
-  h1.title &#xBCA0;&#xC2A4;&#xD2B8;&#xC140;&#xB7EC;
+  h1.title 베스트셀러
   br
 .Shelf
   .Book
     .book_name
-      p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+      p.Site 교보문고
       br
     .book_info
       .btn
@@ -21,12 +22,12 @@ div
       .kyobo_slides
         figure
           img#ky(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next(style='text-decoration: none;') &#x276F;
   .Book
     .book_name
-      p.Site &#xC54C;&#xB77C;&#xB518;
+      p.Site 알라딘
       br
     .book_info
       .btn
@@ -34,12 +35,12 @@ div
       .ala_slides
         figure
           img#ala(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next(style='text-decoration: none;') &#x276F;
   .Book
     .book_name
-      p.Site &#xC608;&#xC2A4;24
+      p.Site 예스24
       br
     .book_info
       .btn
@@ -47,7 +48,7 @@ div
       .yes_slides
         figure
           img#yes(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next(style='text-decoration: none;') &#x276F;
 div
@@ -56,7 +57,7 @@ div
 .Shelf
   .Book
     .book_name
-      p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+      p.Site 신규 도서
       br
     .book_info
       .btn
@@ -64,12 +65,12 @@ div
       .kyobo_slides
         figure
           img#ky1(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next_n(style='text-decoration: none;') &#x276F;
   .Book
     .book_name
-      p.Site &#xC54C;&#xB77C;&#xB518;
+      p.Site 알라딘
       br
     .book_info
       .btn
@@ -77,12 +78,12 @@ div
       .ala_slides
         figure
           img#ala1(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next_n(style='text-decoration: none;') &#x276F;
   .Book
     .book_name
-      p.Site &#xC608;&#xC2A4;24
+      p.Site 예스24
       br
     .book_info
       .btn
@@ -90,13 +91,13 @@ div
       .yes_slides
         figure
           img#yes1(src='')
-          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+          figcaption 1. 그 해 우리는
       .btn
         a.next_n(style='text-decoration: none;') &#x276F;
 div
-  h1.title &#xC774;&#xBCA4;&#xD2B8;
+  h1.title 이벤트
   div
-    p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+    p.Site 교보문고
     div
       table.eventTable
         tr
@@ -104,55 +105,55 @@ div
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95131&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event1.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 1
+              figcaption 이벤트 1
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95126&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event2.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 2
+              figcaption 이벤트 2
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventPid=44402&classGb=KOR&PRE=Y')
                 img.eventImage(src='./images/event/kobo/event3.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 3
+              figcaption 이벤트 3
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95119&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event4.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 4
+              figcaption 이벤트 4
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95130&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event5.jpg')
-                figcaption &#xC774;&#xBCA4;&#xD2B8; 5
+                figcaption 이벤트 5
         tr
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95114&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event6.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 6
+              figcaption 이벤트; 6
           td
             figure
               a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_rest.jsp')
                 img.eventImage(src='./images/event/kobo/event7.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 7
+              figcaption 이벤트 7
           td
             figure
               a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_crazy.jsp')
                 img.eventImage(src='./images/event/kobo/event8.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 8
+              figcaption 이벤트 8
           td
             figure
               a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95121&classGb=KOR')
                 img.eventImage(src='./images/event/kobo/event9.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 9
+              figcaption 이벤트 9
           td
             figure
               a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_sangsang.jsp')
                 img.eventImage(src='./images/event/kobo/event10.jpg')
-              figcaption &#xC774;&#xBCA4;&#xD2B8; 10
+              figcaption 이벤트 10
 div
-  h1.title &#xB3C4;&#xC11C; &#xC0AC;&#xC774;&#xD2B8;
+  h1.title 도서사이트
   .bookSite
     table.siteTable(style='border:2px')
       tr
