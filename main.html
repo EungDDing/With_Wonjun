@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <a id="sitename" href="#">WithBook</a>
+        <a class="sitename" href="#">WithBook</a>
         <input id="searchbar" type="text" name="search" />
         <input id="searchbutton" type="button" value="검색" />
     </div>
@@ -79,51 +79,194 @@
         <h1 class="title">신규 도서</h1> <br />
     </div>
     <div class="Shelf">
-        <p class="Site">교보문고</p> <br />
         <div class="Book">
-            <figure>
-                <img class="Image" src="./images/New1.jpg" />
-                <figcaption>1. 윤석열 X파일</figcaption>
-            </figure>
+            <div class="book_name">
+                <p class="Site">교보문고</p> <br />
+            </div>
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev_n" style="text-decoration: none;">&#10094;</a>
+                </div>
+                <div class="kyobo_slides">
+                    <figure>
+                        <img id="ky1" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
+                </div>
+                <div class="btn">
+                    <a class="next_n" style="text-decoration: none;">&#10095;</a>
+                </div>
+            </div>
         </div>
-        <p class="Site">알라딘</p> <br />
         <div class="Book">
-            <figure>
-                <img class="Image" src="./images/New2.jpg" />
-                <figcaption>1. 서울수도권 아파트, 지금 사야합니다</figcaption>
-            </figure>
+            <div class="book_name">
+                <p class="Site">알라딘</p> <br />
+            </div>
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev_n" style="text-decoration: none;">&#10094;</a>
+                </div>
+                <div class="ala_slides">
+                    <figure>
+                        <img id="ala1" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
+                </div>
+                <div class="btn">
+                    <a class="next_n" style="text-decoration: none;">&#10095;</a>
+                </div>
+            </div>
         </div>
-        <p class="Site">예스24</p> <br />
         <div class="Book">
-            <figure>
-                <img class="Image" src="./images/Best3.jpg" />
-                <figcaption>1. 세븐 테크</figcaption>
-            </figure>
+            <div class="book_name">
+                <p class="Site">예스24</p> <br />
+            </div>
+            <div class="book_info">
+                <div class="btn">
+                    <a class="prev_n" style="text-decoration: none;">&#10094;</a>
+                </div>
+                <div class="yes_slides">
+                    <figure>
+                        <img id="yes1" src="" />
+                        <figcaption>1. 그 해 우리는</figcaption>
+                    </figure>
+                </div>
+                <div class="btn">
+                    <a class="next_n" style="text-decoration: none;">&#10095;</a>
+                </div>
+            </div>
         </div>
     </div>
     <div>
         <h1 class="title">이벤트</h1>
         <div>
             <p class="Site">교보문고</p>
-            <figure>
-                <img class="Image" src="./images/event1.jpg" />
-                <figcaption>이벤트 1</figcaption>
-            </figure>
-            <figure>
-                <img class="Image" src="./images/event2.jpg" />
-                <figcaption>이벤트 2</figcaption>
-            </figure>
-            <figure>
-                <img class="Image" src="./images/event3.jpg" />
-                <figcaption>이벤트 3</figcaption>
-            </figure>
-            <figure>
-                <img class="Image" src="./images/event4.jpg" />
-                <figcaption>이벤트 4</figcaption>
-            </figure>
+            <div>
+                <table class="eventTable">
+                    <tr>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95131&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event1.jpg" />
+                                </a>
+                                <figcaption>이벤트 1</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95126&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event2.jpg" />
+                                </a>
+                                <figcaption>이벤트 2</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventPid=44402&classGb=KOR&PRE=Y">
+                                    <img class="eventImage" src="./images/event/kobo/event3.jpg" />
+                                </a>
+                                <figcaption>이벤트 3</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95119&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event4.jpg" />
+                                </a>
+                                <figcaption>이벤트 4</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95130&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event5.jpg" />
+                                    <figcaption>이벤트 5</figcaption>
+                                </a>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95114&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event6.jpg" />
+                                </a>
+                                <figcaption>이벤트 6</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/prom/2022/pube/02/220209_rest.jsp">
+                                    <img class="eventImage" src="./images/event/kobo/event7.jpg" />
+                                </a>
+                                <figcaption>이벤트 7</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/prom/2022/pube/02/220209_crazy.jsp">
+                                    <img class="eventImage" src="./images/event/kobo/event8.jpg" />
+                                </a>
+                                <figcaption>이벤트 8</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95121&classGb=KOR">
+                                    <img class="eventImage" src="./images/event/kobo/event9.jpg" />
+                                </a>
+                                <figcaption>이벤트 9</figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <a href="http://www.kyobobook.co.kr/prom/2022/pube/02/220209_sangsang.jsp">
+                                    <img class="eventImage" src="./images/event/kobo/event10.jpg" />
+                                </a>
+                                <figcaption>이벤트 10</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="title">도서 사이트</h1>
+        <div class="bookSite" >
+            <table class="siteTable" border="2px">
+                <tr>
+                    <td>
+                        <a href="https://www.aladin.co.kr/home/welcome.aspx">
+                            <img class="logo" src="./images/logos/logo_aladin.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://www.kyobobook.co.kr/index.laf">
+                            <img class="logo" src="./images/logos/logo_kyobo.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://www.yes24.com/main/default.aspx">
+                            <img class="logo" src="./images/logos/logo_yes24.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://www.ypbooks.co.kr/kor_index.yp">
+                            <img class="logo" src="./images/logos/logo_yp.jpg" />
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://book.interpark.com/bookPark/html/book.html">
+                            <img class="logo" src="./images/logos/logo_interpark.jpg" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 
 </html>

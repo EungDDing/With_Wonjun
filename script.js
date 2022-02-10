@@ -11,7 +11,6 @@ img_btn_next.forEach((e)=>{
     e.addEventListener("click", imgnextClick);
 })
 
-
 function imgnextClick(e){
     var imgTag = e.path[2].children[1].children[0].children[0].id;
     var imgObj = document.getElementById(imgTag);
