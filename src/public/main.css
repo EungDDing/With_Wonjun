@@ -8,18 +8,25 @@
     overflow: hidden;
     min-width: 1190px;
 }
-.header a:link, .navi a:visited {
+.header {
     margin-top: 30px;
     overflow: hidden;
     min-width: 1190px;
     margin-bottom: 30px;
 }
-#sitename {
+.sitename {
     padding: 30px 50px;
     margin: 30px;
     font-weight: bold;
     font-size:40px;
     color: midnightblue;
+}
+.sitename a:link, .sitename a:visited {
+    padding: 30px 50px;
+    margin: 30px;
+    font-weight: bold;
+    font-size:40px;
+    text-decoration: none;
 }
 #searchbar {
     color: midnightblue;
@@ -44,6 +51,7 @@
     margin-bottom: 15px;
     margin-top: 20px;
     font-size: 30px;
+    color: midnightblue;
 }
 .Shelf {
     column-count: 3;
@@ -96,4 +104,25 @@ figure {
     display: inline-block;
     width: 10%;
     cursor: pointer;
+}
+.eventImage {
+    width: 270px;
+    height: 170px;
+}
+.eventTable {
+    margin-left: 10px;
+}
+.logo {
+    margin: 2px;
+    padding: 2px;
+    width: 252px;
+    height: 52px;
+}
+.siteTable {
+    border-color: gray;
+    border-collapse: collapse;
+}
+.bookSite {
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
