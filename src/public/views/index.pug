@@ -1,16 +1,175 @@
 doctype html
 head
   meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
+  title WithBook
+  link(href='main.css' rel='stylesheet')
+.header
+  a.sitename(href='#') WithBook
+  input#searchbar(type='text' name='search')
+  input#searchbutton(type='button' value='검색')
 div
-  h1
-    | 이응민을 석방하라!!!!!!!!!!!!!
-.search
-  form(action='/search' method='get')
-    label 검색창
-    input(type='text' name='book')
-    button(type="submit") 검색
-.bestseller
-  a(href='best') 베스트셀러
+  h1.title &#xBCA0;&#xC2A4;&#xD2B8;&#xC140;&#xB7EC;
+  br
+.Shelf
+  .Book
+    .book_name
+      p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+      br
+    .book_info
+      .btn
+        a.prev(style='text-decoration: none;') &#x276E;
+      .kyobo_slides
+        figure
+          img#ky(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next(style='text-decoration: none;') &#x276F;
+  .Book
+    .book_name
+      p.Site &#xC54C;&#xB77C;&#xB518;
+      br
+    .book_info
+      .btn
+        a.prev(style='text-decoration: none;') &#x276E;
+      .ala_slides
+        figure
+          img#ala(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next(style='text-decoration: none;') &#x276F;
+  .Book
+    .book_name
+      p.Site &#xC608;&#xC2A4;24
+      br
+    .book_info
+      .btn
+        a.prev(style='text-decoration: none;') &#x276E;
+      .yes_slides
+        figure
+          img#yes(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next(style='text-decoration: none;') &#x276F;
+div
+  h1.title &#xC2E0;&#xADDC; &#xB3C4;&#xC11C;
+  br
+.Shelf
+  .Book
+    .book_name
+      p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+      br
+    .book_info
+      .btn
+        a.prev_n(style='text-decoration: none;') &#x276E;
+      .kyobo_slides
+        figure
+          img#ky1(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next_n(style='text-decoration: none;') &#x276F;
+  .Book
+    .book_name
+      p.Site &#xC54C;&#xB77C;&#xB518;
+      br
+    .book_info
+      .btn
+        a.prev_n(style='text-decoration: none;') &#x276E;
+      .ala_slides
+        figure
+          img#ala1(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next_n(style='text-decoration: none;') &#x276F;
+  .Book
+    .book_name
+      p.Site &#xC608;&#xC2A4;24
+      br
+    .book_info
+      .btn
+        a.prev_n(style='text-decoration: none;') &#x276E;
+      .yes_slides
+        figure
+          img#yes1(src='')
+          figcaption 1. &#xADF8; &#xD574; &#xC6B0;&#xB9AC;&#xB294;
+      .btn
+        a.next_n(style='text-decoration: none;') &#x276F;
+div
+  h1.title &#xC774;&#xBCA4;&#xD2B8;
+  div
+    p.Site &#xAD50;&#xBCF4;&#xBB38;&#xACE0;
+    div
+      table.eventTable
+        tr
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95131&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event1.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 1
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95126&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event2.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 2
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventPid=44402&classGb=KOR&PRE=Y')
+                img.eventImage(src='./images/event/kobo/event3.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 3
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95119&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event4.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 4
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95130&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event5.jpg')
+                figcaption &#xC774;&#xBCA4;&#xD2B8; 5
+        tr
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95114&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event6.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 6
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_rest.jsp')
+                img.eventImage(src='./images/event/kobo/event7.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 7
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_crazy.jsp')
+                img.eventImage(src='./images/event/kobo/event8.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 8
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/eventRenewal/eventViewByPid.laf?eventId=95121&classGb=KOR')
+                img.eventImage(src='./images/event/kobo/event9.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 9
+          td
+            figure
+              a(href='http://www.kyobobook.co.kr/prom/2022/pube/02/220209_sangsang.jsp')
+                img.eventImage(src='./images/event/kobo/event10.jpg')
+              figcaption &#xC774;&#xBCA4;&#xD2B8; 10
+div
+  h1.title &#xB3C4;&#xC11C; &#xC0AC;&#xC774;&#xD2B8;
+  .bookSite
+    table.siteTable(style='border:2px')
+      tr
+        td
+          a(href='https://www.aladin.co.kr/home/welcome.aspx')
+            img.logo(src='./images/logos/logo_aladin.jpg')
+        td
+          a(href='http://www.kyobobook.co.kr/index.laf')
+            img.logo(src='./images/logos/logo_kyobo.jpg')
+        td
+          a(href='http://www.yes24.com/main/default.aspx')
+            img.logo(src='./images/logos/logo_yes24.jpg')
+        td
+          a(href='http://www.ypbooks.co.kr/kor_index.yp')
+            img.logo(src='./images/logos/logo_yp.jpg')
+        td
+          a(href='http://book.interpark.com/bookPark/html/book.html')
+            img.logo(src='./images/logos/logo_interpark.jpg')
+script(src='script.js')
+script(src='script1.js')
