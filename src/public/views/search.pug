@@ -1,8 +1,52 @@
 doctype html
 head
   meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-h1 hello
-  p= body
+  title WithBook
+  link(href='search.css' rel='stylesheet' type='text/css')
+.header
+  a#sitename(href='/') WithBook
+  input#searchbar(type='text' name='search')
+  input#searchbutton(type='button' value='검색')
+hr
+.result
+  p.Besult 검색결과
+  p.sorting
+    span.sort_first
+      img(src='./images/check.svg')
+      | 관련도순
+    span.sort_second
+      img(src='./images/uncheck.svg')
+      | 출간일순
+    span.sort_third
+      img(src='./images/uncheck.svg')
+      | 판매량순
+.bookList
+  ul.book_relative
+    li
+      .thumbnail
+        img(src='./images/Best1.jpg' style='width:100px; height:160px')
+      .book_info
+        .book_title
+          span.material-icons-outlined
+            | done
+          strong title
+        .book_desc
+          p
+            | 가격
+            del 170000
+            |  -&gt; 
+            span.dis_price 15000
+          p
+            | 이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라
+    li
+      .thumbnail
+        img(src='./images/Best1.jpg' style='width:100px; height:160px')
+      .book_info
+        p good
+  ul.book_date(style='display: none')
+    li
+      | notgood
+  ul.book_sell(style='display: none')
+    li
+      | verygood
+script(src='search.js')
