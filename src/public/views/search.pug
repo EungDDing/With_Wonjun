@@ -22,25 +22,21 @@ hr
       | 판매량순
 .bookList
   ul.book_relative
-    li
-      .thumbnail
-        img(src='./images/Best1.jpg' style='width:100px; height:160px')
-      .book_info
-        .book_title
-          strong title
-        .book_desc
-          p
-            | 가격
-            del 170000
-            |  -&gt; 
-            span.dis_price 15000
-          p
-            | 이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라이응민을 석방하라
-    li
-      .thumbnail
-        img(src='./images/Best1.jpg' style='width:100px; height:160px')
-      .book_info
-        p good
+    each profile in sim
+      li
+        .thumbnail
+          img(src='./images/Best1.jpg' style='width:100px; height:160px')
+        .book_info
+          .book_title
+            strong= profile.title
+          .book_desc
+            p
+              | 가격
+              del 170000
+              |  -&gt; 
+              span.dis_price= profile.price
+            p
+              =profile.description
   ul.book_date(style='display: none')
     li
       | notgood
