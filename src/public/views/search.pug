@@ -25,22 +25,54 @@ hr
     each profile in sim
       li
         .thumbnail
-          img(src='./images/Best1.jpg' style='width:100px; height:160px')
+          img(src= profile.image style='width:100px; height:160px')
         .book_info
           .book_title
-            strong= profile.title
+            - t = profile.title.replace(/<\/?[^>]+(>|$)/g, "");
+            strong= t
           .book_desc
             p
-              | 가격
-              del 170000
+              | 가격 
+              del= profile.price
               |  -&gt; 
-              span.dis_price= profile.price
+              span.dis_price= profile.discount
             p
-              =profile.description
+              - d = profile.description.replace(/<\/?[^>]+(>|$)/g, "");
+              = d
   ul.book_date(style='display: none')
-    li
-      | notgood
+    each profile in date
+      li
+        .thumbnail
+          img(src= profile.image style='width:100px; height:160px')
+        .book_info
+          .book_title
+            - t = profile.title.replace(/<\/?[^>]+(>|$)/g, "");
+            strong= t
+          .book_desc
+            p
+              | 가격 
+              del= profile.price
+              |  -&gt; 
+              span.dis_price= profile.discount
+            p
+              - d = profile.description.replace(/<\/?[^>]+(>|$)/g, "");
+              = d
   ul.book_sell(style='display: none')
-    li
-      | verygood
+    each profile in count
+      li
+        .thumbnail
+          img(src= profile.image style='width:100px; height:160px')
+        .book_info
+          .book_title
+            - t = profile.title.replace(/<\/?[^>]+(>|$)/g, "");
+            strong= t
+          .book_desc
+            p
+              | 가격 
+              del= profile.price
+              |  -&gt; 
+              span.dis_price= profile.discount
+            p
+              - d = profile.description.replace(/<\/?[^>]+(>|$)/g, "");
+              = d
 script(src='search.js')
