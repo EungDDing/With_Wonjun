@@ -5,8 +5,9 @@ head
   link(href='search.css' rel='stylesheet' type='text/css')
 .header
   a#sitename(href='/') WithBook
-  input#searchbar(type='text' name='search')
-  input#searchbutton(type='button' value='검색')
+  form(action='/search' method='get')
+    input#searchbar(type='text' name='search')
+    button(id="searchbutton" type="submit") 검색
 hr
 .result
   p.Besult 검색결과
