@@ -4,7 +4,7 @@ const client_id = "2QLxRE_5otWbnN0t1TVA";
 const client_sec = "dnp2wPibWQ";
 
 
-async function dataRecieve(api){
+async function dataReceive(api){
     var request = require('request');
     const options = {
         url: api,
@@ -29,9 +29,9 @@ router.get('/', async (req, res) => {
     var api_url = 'https://openapi.naver.com/v1/search/book.json?query=' + encodeURI(req.query.search); // json 결과
     var api_url_date = api_url+'&sort=date';
     var api_url_count = api_url+'&sort=count';
-    list = await dataRecieve(api_url);
-    list_data = await dataRecieve(api_url_date);
-    list_count = await dataRecieve(api_url_count);
+    list = await dataReceive(api_url);
+    list_data = await dataReceive(api_url_date);
+    list_count = await dataReceive(api_url_count);
 
     res.render('search', {
         title: 'Homepage', 
