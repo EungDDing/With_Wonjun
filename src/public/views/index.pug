@@ -10,7 +10,11 @@ head
     button(id="searchbutton" type="submit") 검색
 div
   h1.title 베스트셀러
-  p= asd
+  each profile in asd
+    - bookname = profile.children[5].children[1].children[1].children[0].data
+    - booklist = []
+    - for(var i=0; i<5; i++){booklist.push(bookname[i])}
+    - console.log(booklist)
   br
 .Shelf
   .Book
